@@ -13,3 +13,41 @@
 .statusbar-overlay {
     background: #000000;
 }
+
+
+/* Application styles */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar .center,
+.author {
+    font-weight: 300;
+}
+
+.author {
+    margin-left: 130px;
+    
+}
+
+.rubiks {
+    height: 63px;
+    width: 84px;
+    position: relative;
+    top: 12px;
+}
+
+.menu {
+    font-size: 36px;
+}
+
+
+.scramble {
+    margin-top: 25px;
+}
+
+.scramble-text {
+    font-weight: 300;
+    font-size: 24px;
+}

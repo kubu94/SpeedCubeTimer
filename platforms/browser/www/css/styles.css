@@ -17,6 +17,14 @@
 
 /* Application styles */
 
+a {
+    a:link,
+    a:hover,
+    a:active {
+        color: WindowText;
+    }
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -27,8 +35,7 @@ body {
 }
 
 .author {
-    margin-left: 130px;
-    
+    margin-left: 16px;
 }
 
 .rubiks {
@@ -38,16 +45,14 @@ body {
     top: 12px;
 }
 
+
 .menu {
     font-size: 36px;
 }
 
-
-.scramble {
-    margin-top: 25px;
-}
-
-.scramble-text {
+.select-cube {
+    font-size: 36px;
     font-weight: 300;
-    font-size: 24px;
+    text-align: center;
+    color: #002366;
 }

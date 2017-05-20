@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" href="lib/framework7/css/framework7.material.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <!-- CSS file added from 3D panels Library -->
     <link rel="stylesheet" href="lib/3dpanels/framework7.3dpanels.css">
 
     <!-- Fonts -->
@@ -41,17 +42,16 @@
 </head>
 
 <body>
-    <!-- class="layout-dark" -->
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
-    
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
             <p class="menu">Menu</p>
+
             <div class="list-block">
                 <ul>
                     <li>
@@ -103,9 +103,7 @@
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            
             <!-- Top Navbar-->
-            
             <div class="navbar">
                 <div class="navbar-inner">
                     <div class="center">SpeedCube Timer
@@ -116,9 +114,7 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            
             <div class="pages navbar-fixed toolbar-fixed">
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="index" class="page">
@@ -126,20 +122,16 @@
                     <div class="page-content">
                         <div class="content-block">
                             <a href="choose.html" class="button button-big button-fill button-raised color-blue">Start new session</a>
-                            <div class="scramble">
-                                <a href="#" class="button button-big button-fill button-raised color-blue scramble-btn">Generate a new scramble</a>
-                                <div class="scramble scramble-text"><span>Scramble:</span></div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
-            
             <!-- Bottom Toolbar-->
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar content -->
-                    <p class="author">Projekt wykonany przez DJ i JM</p>
+                    <p class="author">App created by: DJ and JM</p>
                 </div>
             </div>
         </div>

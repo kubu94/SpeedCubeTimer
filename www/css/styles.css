@@ -30,7 +30,7 @@ body {
 }
 
 .navbar .center,
-.author {
+.version {
     font-weight: 200;
 }
 
@@ -39,8 +39,9 @@ body {
     padding-top: 100px;
 }
 
-.author {
-    margin-left: 15px;
+.version {
+    margin-left: 150px;
+    letter-spacing: 2px; 
 }
 
 .rubiks {
@@ -63,17 +64,17 @@ body {
 }
 
 .stopwatch {
-    padding-top: 1px;
+    padding-top: 0px;
 }
 
 .stopwatch-time {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     text-align: center;
 }
 
 .session-results {
-    margin-top: 45px;
+    margin-top: 4px;
 }
 
 .session-results p {
@@ -88,7 +89,7 @@ body {
 
 .scramble-text {
     font-weight: 300;
-    font-size: 26px;
+    font-size: 20px;
     padding-top: 15px;
    
 }

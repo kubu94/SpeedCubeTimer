@@ -28,10 +28,22 @@ myApp.onPageInit('choose', function (page) {
     });
 });
 
+//myApp.onPageInit('global', function (page) {
+  //  getRecords();
+//});
+
 // Now we need to run the code that will be executed only for specific page.
+
 
 
 $$(".list-block ul li a").on("click", function (event) {
     event.preventDefault();
     myApp.closePanel();
 });
+
+//function getRecords() {
+//      $$.get('https://www.worldcubeassociation.org/results/events.php', 
+//      function (data){
+//      var table = page.find('.table-responsive');
+//      });
+//};

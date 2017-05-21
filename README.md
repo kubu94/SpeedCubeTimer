@@ -1,6 +1,6 @@
 # SpeedCubeTimer
 
-![img](http://i.imgur.com/n8RZDIM.jpg) ![img](http://i.imgur.com/sHoC68e.jpg) 
+![img](http://i.imgur.com/WDA5Jht.jpg) ![img](http://i.imgur.com/56FqF1T.jpg) 
 
 SpeedCubeTimer is an application that was designed to help speedcubers with measuring and storing their times during cubing sessions. Despite of its main function it's also capable of displaying current global records and news from cubing's society.
 

@@ -98,3 +98,20 @@ body {
     
 padding-top: 75px;
 }
+
+.records i,
+.global i {
+    color: gold;
+}
+
+.best-results  {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.records {
+    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
+    
+}

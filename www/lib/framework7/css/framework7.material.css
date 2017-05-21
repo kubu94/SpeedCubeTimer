@@ -4900,7 +4900,7 @@ body.panel-closing .views {
 }
 /* === Statusbar overlay === */
 html.with-statusbar-overlay body {
-  padding-top: 2px;
+  padding-top: 20px;
   box-sizing: border-box;
 }
 html.with-statusbar-overlay body .statusbar-overlay {

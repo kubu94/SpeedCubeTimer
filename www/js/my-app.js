@@ -20,6 +20,8 @@ $$(document).on('deviceready', function () {
 
 // Application code
 
+// Choose page is displayed upon clicking buttons in row
+
 myApp.onPageInit('choose', function (page) {
     // code...
     $$(".buttons-row a").on("click", function (event) {
@@ -28,22 +30,57 @@ myApp.onPageInit('choose', function (page) {
     });
 });
 
-//myApp.onPageInit('global', function (page) {
-  //  getRecords();
-//});
+// Scramble code is executed when pages is opened, therefore a ready code can be generated without the need to press button
 
-// Now we need to run the code that will be executed only for specific page.
+myApp.onPageInit('stopwatch', function (page) {
+    /* Scramble */
+    getScramble();
+    $$('.scramble-btn').on('click', function () {
+        getScramble();
+    })
+}).trigger();
 
 
+/* Scramble Code - modified from https://github.com/jnrbsn/rubiks-cube-scrambler */
+
+function getScramble() {
+    var moves = new Array();
+    moves['r'] = new Array("R", "R'", "R2");
+    moves['l'] = new Array("L", "L'", "L2");
+    moves['u'] = new Array("U", "U'", "U2");
+    moves['d'] = new Array("D", "D'", "D2");
+    moves['f'] = new Array("F", "F'", "F2");
+    moves['b'] = new Array("B", "B'", "B2");
+
+    var limit = 25;
+    var last = "";
+    var scramble = "";
+    var keys = "";
+
+    for (var i = 1; i <= limit; i++) {
+        keys = new Array("r", "l", "u", "d", "f", "b");
+        shuffle(keys);
+        while (last == keys[0]) {
+            shuffle(keys);
+        }
+        shuffle(moves[keys[0]]);
+        move = moves[keys[0]][0];
+        scramble += move + " ";
+        last = keys[0];
+    } 
+    
+    $$('.scramble .scramble-text').html( scramble);
+
+}
+
+function shuffle(o) { //v1.0
+    for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
+
+// Side Panel closes when element from list is selected
 
 $$(".list-block ul li a").on("click", function (event) {
     event.preventDefault();
     myApp.closePanel();
 });
-
-//function getRecords() {
-//      $$.get('https://www.worldcubeassociation.org/results/events.php', 
-//      function (data){
-//      var table = page.find('.table-responsive');
-//      });
-//};

@@ -31,11 +31,16 @@ body {
 
 .navbar .center,
 .author {
-    font-weight: 300;
+    font-weight: 200;
+}
+
+.bigbuttonindex {
+    
+    padding-top: 100px;
 }
 
 .author {
-    margin-left: 16px;
+    margin-left: 15px;
 }
 
 .rubiks {
@@ -55,4 +60,40 @@ body {
     font-weight: 300;
     text-align: center;
     color: #002366;
+}
+
+.stopwatch {
+    padding-top: 1px;
+}
+
+.stopwatch-time {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.session-results {
+    margin-top: 45px;
+}
+
+.session-results p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.scramble {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.scramble-text {
+    font-weight: 300;
+    font-size: 26px;
+    padding-top: 15px;
+   
+}
+
+.cube {
+    
+padding-top: 75px;
 }

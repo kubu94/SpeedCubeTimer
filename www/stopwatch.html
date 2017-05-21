@@ -1,0 +1,33 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<div class="pages">
+    <div data-page="stopwatch" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                <!-- SCRAMBLE BUTTON/DISPLAY -->
+                <div class="scramble">
+                     <a href="#" class="button button-small button-fill button-raised color-blue scramble-btn">Generate a new scramble</a>
+                     <div class="scramble scramble-text"><span>Scramble</span></div>
+                </div>
+                    <!-- Stopwatch Counter -->
+                    <div class="stopwatch">
+                    <div class="stopwatch-time">
+                        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+                    </div>
+                    <!-- Stop/Start Buttons -->    
+                    <div class="stopwatch-buttons row">
+                        <!-- Each "cell" has col-[widht in percents] class -->
+                        <div class="col-50"><a href="#" id="button-start" class="button button-raised button-fill color-green">START</a></div>
+                        <div class="col-50" style="display: none;"><a href="#" id="button-stop" class="button button-raised button-fill color-red">STOP</a></div>
+                        <div class="col-50"><a href="#" id="button-reset" class="button button-raised button-fill color-red">STOP</a></div>
+                    </div>
+                    <!-- Result Display Text-->    
+                    <div class="session-results">
+                        <p class="lasttimeinsession">Last time in session:</p>
+                        <p class="bestinsession">Best time in session:</p>
+                        <p class="averageinsession">Average time in session:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

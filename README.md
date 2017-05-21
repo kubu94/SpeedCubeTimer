@@ -1,29 +1,21 @@
-# Framework7 PhoneGap Application 
+# SpeedCubeTimer
 
-> [Framework7](http://www.idangero.us/framework7) is a Mobile UI framework that can be used to build hybrid apps with PhoneGap. This template allows you to get started using Framework7 
-  quickly. 
-  
-  For a more extensive Framework7 sample, see the [one included in their Github project](https://github.com/nolimits4web/Framework7/tree/master/dist)
-  or the [demo apps on their website](http://www.idangero.us/framework7/apps/#.VpQCc5MrKjQ).
-    
-  Also, for an intro to Framework7, check out [this post on the PhoneGap blog](http://phonegap.com/blog/2015/11/30/framework7/).   
+![img](http://i.imgur.com/n8RZDIM.jpg) ![img](http://i.imgur.com/sHoC68e.jpg) 
 
+SpeedCubeTimer is an application that was designed to help speedcubers with measuring and storing their times during cubing sessions. Despite of its main function it's also capable of displaying current global records and news from cubing's society.
 
-## Usage
-    
-### PhoneGap CLI
+## Getting Started
 
-    $ phonegap create my-app --template phonegap-template-framework7
+In order to further develompent of this project you will need 
 
-### Cordova CLI
+## Built With
 
-    $ cordova create my-app --template phonegap-template-framework7
-    
-### Desktop
+* [Framework7](https://framework7.io/) - The web framework used
+* [Juicer](https://www.juicer.io) - Used to gather social feeds
+* [PhoneGap](http://phonegap.com/) - Application used for tests
+* [Brackets](http://brackets.io/) - Open source text editor
 
-In your browser, open the file:
+## Authors
 
-    /www/index.html
-
-
-  
+* **Dawid Janik**
+* **Jakub Maniak**
